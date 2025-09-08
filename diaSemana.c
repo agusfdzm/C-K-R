@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+void imprimir_dia(int numero_de_dia) {
+    switch (numero_de_dia) {
+        case 1:
+            printf("Lunes");
+            break;
+        case 2:
+            printf("Martes");
+            break;
+        case 3:
+            printf("Miercoles");
+            break;
+        case 4:
+            printf("Jueves");
+            break;
+        case 5:
+            printf("Viernes");
+            break;
+        case 6:
+            printf("Sábado");
+            break;
+        case 7:
+            printf("Domingo");
+            break;
+        default:
+            printf("No es un día de la semana válido");
+    }
+}
+
+int main() {
+    imprimir_dia(3);
+}
