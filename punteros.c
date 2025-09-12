@@ -1,12 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int *ptr; // Se usa * para definir que es una variable puntero. También hay que especificar el tipo de dato
+    int x = 10;
 
-    int edad = 18;
-    void *ptrEdad = & edad;
-
-    printf("%p", (void*)ptrEdad); // Se usa el identificador de puntero %p
-    return 0;
+    printf("x = %d\n", x);
+    printf("Dirección de memoria: %d\n", &x);
 }
-
