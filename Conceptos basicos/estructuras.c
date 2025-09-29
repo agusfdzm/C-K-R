@@ -1,20 +1,17 @@
 #include <stdio.h>
-#include <string.h>
 
-struct Persona {
-    char nombre[50];
-    int edad;
-    float altura;
+struct cuenta {
+	char nombre[30];
+	char apellido[40];
+	int identificador;
+	float saldo;
 };
 
 int main() {
-    struct Persona p1;
+    struct cuenta c1;
+    c1.nombre[30] = "Agus";
+    c1.identificador = 3211;
+    c1.saldo = 1240.12;
 
-    strcpy(p1.nombre, "Agus");
-    p1.edad = 20;
-    p1.altura = 1.73;
-
-    printf("Mi nombre es: %s\n", p1.nombre);
-    printf("Mi edad es: %d\n", p1.edad);
-    printf("Mi altura es: %f\n", p1.altura);
+    return 0;
 }
